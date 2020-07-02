@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSubtractDice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybutton"
+            android:text="-"
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/btnAddDice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybutton"
+            android:text="+"
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRollTheDice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC0066"
+        android:text="Roll the dice"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgDice1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/d20_blank"
+                android:tag="d20"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:text="20"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_alignTop="@id/imgDice1"
+                android:layout_alignBottom="@id/imgDice1"
+                android:layout_alignLeft="@id/imgDice1"
+                android:layout_alignRight="@id/imgDice1" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:id="@+id/layout_dice2">
+
+        <ImageView
+            android:id="@+id/imgDice2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/d20_blank"
+            android:tag="d20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text="20"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_alignTop="@id/imgDice2"
+                android:layout_alignBottom="@id/imgDice2"
+                android:layout_alignLeft="@id/imgDice2"
+                android:layout_alignRight="@id/imgDice2" />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:id="@+id/layout_dice3">
+
+            <ImageView
+                android:id="@+id/imgDice3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/d20_blank"
+                android:tag="d20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:text="20"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_alignTop="@id/imgDice3"
+                android:layout_alignBottom="@id/imgDice3"
+                android:layout_alignLeft="@id/imgDice3"
+                android:layout_alignRight="@id/imgDice3" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
